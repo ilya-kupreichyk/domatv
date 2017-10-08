@@ -1,0 +1,296 @@
+@font-face {
+  font-family: ProximaNova;
+  src: url("../fonts/ProximaNova-Bold.ttf");
+}
+@font-face {
+  font-family: BebasNeueBold;
+  src: url("../fonts/BebasNeueBold.otf");
+}
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("../fonts/ProximaNova-Regular.ttf");
+}
+@font-face {
+  font-family: ProximaNova-Light;
+  src: url("../fonts/ProximaNova-Light.ttf");
+}
+@font-face {
+  font-family: ProximaNova-Extrabld;
+  src: url("../fonts/ProximaNova-Extrabld.ttf");
+}
+#popup {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+}
+#popup #centre {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 200px;
+  background-color: #ac1e47;
+  font-family: ProximaNova;
+  font-size: 30px;
+  position: relative;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Segoe UI", sans-serif;
+}
+@media all and (min-width: 1200px) {
+  #header {
+    display: flex;
+    height: 203px;
+    margin: auto;
+    border-top: 9px solid #ffd200;
+  }
+  #header .wrapper {
+    display: flex;
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+  }
+  #header h1 {
+    color: #3c3636;
+    margin: auto;
+    font-family: ProximaNova;
+    text-transform: uppercase;
+    font-size: 42px;
+    padding-bottom: 70px;
+  }
+  #information {
+    height: 380px;
+    background: #ffd200;
+    border-bottom: 1px solid #b29300;
+  }
+  #information .info {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+  }
+  #information .info img {
+    position: relative;
+    top: -420px;
+    left: 330px;
+    height: 523px;
+  }
+  #information .info .left {
+    width: 390px;
+    margin-left: 40px;
+  }
+  #information .info .left h2 {
+    font-family: BebasNeueBold;
+    font-size: 58px;
+    margin-bottom: 0;
+    line-height: 0.9em;
+    padding-bottom: 10px;
+    border-bottom: 1px outset #c8c8c8;
+  }
+  #information .info .left p {
+    font-family: ProximaNova-Regular;
+    font-size: 19px;
+  }
+  #information .info .left ul {
+    font-family: ProximaNova-Regular;
+    font-size: 19px;
+    list-style-type: none;
+    padding: 0;
+  }
+  #information .info .left ul li::before {
+    content: "\25CF";
+    padding-right: 10px;
+  }
+  #information .info .application {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    background-color: #3c3636;
+  }
+  #information .info .application .author {
+    font-family: ProximaNova-Light;
+    color: white;
+    margin-bottom: 0;
+    font-size: 19px;
+  }
+  #information .info .application .price {
+    font-family: ProximaNova-Extrabld;
+    margin: 0;
+    color: #ffd200;
+    font-size: 47px;
+    text-transform: uppercase;
+  }
+  #information .info .application .date {
+    font-family: ProximaNova-Light;
+    color: white;
+    font-size: 16px;
+    margin-top: 0;
+  }
+  #information .info .application .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #information .info .application .form input {
+    margin: 10px;
+    width: 283px;
+    height: 55px;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+  }
+  #information .info .application .form input::placeholder {
+    color: #1f2129;
+    font-size: 20px;
+    font-family: ProximaNova-Regular;
+    padding-left: 15px;
+  }
+  #information .info .application .form input:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  #information .info .application .form input:focus::-moz-placeholder {
+    color: transparent;
+  }
+  #information .info .application .form input:focus:-moz-placeholder {
+    color: transparent;
+  }
+  #information .info .application .form input:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+  #information .info .application .form #send {
+    width: 283px;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: ProximaNova;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    background-image: -webkit-linear-gradient(top, #ff78a0, #ac1e47);
+    background-image: -moz-linear-gradient(top, #ff78a0, #ac1e47);
+    background-image: -ms-linear-gradient(top, #ff78a0, #ac1e47);
+    background-image: -o-linear-gradient(top, #ff78a0, #ac1e47);
+    background-image: linear-gradient(to bottom, #ff78a0, #ac1e47);
+    outline: none;
+  }
+  #information .info .application .form #send:hover {
+    transform: scale(1.04);
+  }
+  #information .info .application .form #send:focus {
+    transform: scale(1.02);
+  }
+  .arrow {
+    display: flex;
+    justify-content: center;
+    height: 190px;
+    width: 1200px;
+    margin: auto;
+    border-bottom: 1px solid #dedede;
+  }
+  .arrow p {
+    font-family: ProximaNova;
+    font-size: 27px;
+    margin-top: 87px;
+    text-align: center;
+    padding-left: 130px;
+  }
+  .arrow img {
+    position: relative;
+    left: 8px;
+    bottom: 9px;
+  }
+  .blog {
+    margin: auto;
+    display: flex;
+  }
+  .blog .content {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 50px auto 0 auto;
+    position: relative;
+  }
+  .blog .content .hidn {
+    width: 100%;
+    overflow: hidden;
+  }
+  .blog .content .gallery {
+    width: 9999px;
+    display: flex;
+  }
+  .blog .content #left {
+    position: absolute;
+    left: -80px;
+    height: 170px;
+    width: 80px;
+    cursor: pointer;
+    background: url("../images/left.png") no-repeat center;
+    border: none;
+    outline: none;
+  }
+  .blog .content #left:hover {
+    transform: scale(1.1);
+  }
+  .blog .content #right {
+    position: absolute;
+    right: -80px;
+    height: 170px;
+    width: 80px;
+    cursor: pointer;
+    background: url("../images/right.png") no-repeat center;
+    border: none;
+    outline: none;
+  }
+  .blog .content #right:hover {
+    transform: scale(1.1);
+  }
+  .blog .content .review {
+    display: flex;
+    justify-content: space-between;
+    width: 570px;
+    margin-right: 60px;
+  }
+  .blog .content .review img {
+    height: 170px;
+    width: 170px;
+    border-radius: 8px;
+    z-index: 10;
+  }
+  .blog .content .review .letter {
+    width: 375px;
+  }
+  .blog .content .review .letter .history {
+    font-family: ProximaNova-Regular;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffe400;
+  }
+  .blog .content .review .letter i {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: #ffe400;
+  }
+  .blog .content .review .letter .name {
+    font-family: ProximaNova;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .blog .content .review .letter .city {
+    font-family: ProximaNova-Regular;
+    font-size: 15px;
+    margin: 0;
+  }
+}
